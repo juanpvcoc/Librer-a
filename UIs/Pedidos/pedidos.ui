@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Gestionar pedidos</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../icons/book.png</normaloff>../icons/book.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_7">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="2,7,1">
+      <property name="spacing">
+       <number>1</number>
+      </property>
+      <property name="leftMargin">
+       <number>1</number>
+      </property>
+      <property name="topMargin">
+       <number>1</number>
+      </property>
+      <property name="rightMargin">
+       <number>1</number>
+      </property>
+      <property name="bottomMargin">
+       <number>1</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="header">
+        <property name="styleSheet">
+         <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(0, 0, 38, 255), stop:0.81592 rgba(0, 0, 74, 255));</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <property name="topMargin">
+          <number>10</number>
+         </property>
+         <property name="rightMargin">
+          <number>10</number>
+         </property>
+         <property name="bottomMargin">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="tittleFrame">
+           <property name="styleSheet">
+            <string notr="true">backgorund-color: none;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="lblTitulo">
+              <property name="font">
+               <font>
+                <family>Candara</family>
+                <pointsize>18</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="text">
+               <string>Gestionar pedidos</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="6,1,3">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QFrame" name="searchFrame">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLineEdit" name="txtBusqueda">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Candara</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="autoFillBackground">
+                  <bool>false</bool>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+padding: 10px;
+background-color: none;</string>
+                 </property>
+                 <property name="placeholderText">
+                  <string>Buscar pedidos...</string>
+                 </property>
+                 <property name="clearButtonEnabled">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btnBuscar">
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="toolTip">
+                  <string>Buscar</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton#btnBuscar{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(184, 184, 184, 105), stop:0.81592 rgba(195, 195, 195, 94));
+	
+	color: rgba(255, 255, 255);
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding: 10px;
+}
+
+QPushButton#btnBuscar:hover{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(150, 150, 150, 255), stop:0.81592 rgba(201, 201, 201, 255));
+}
+
+QPushButton#btnBuscar:pressed{
+	background-color: rgb(173, 173, 173);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../icons/search.svg</normaloff>../icons/search.svg</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>55</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QFrame" name="crudFrame">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <property name="spacing">
+                <number>10</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QPushButton" name="btnActualizar">
+                 <property name="font">
+                  <font>
+                   <family>Candara</family>
+                   <pointsize>10</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="toolTip">
+                  <string>Actualizar tabla</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton#btnActualizar{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(184, 184, 184, 105), stop:0.81592 rgba(195, 195, 195, 94));
+	
+	color: rgba(255, 255, 255);
+	border-radius: 15px;
+	padding: 10px;
+}
+
+QPushButton#btnActualizar:hover{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(150, 150, 150, 255), stop:0.81592 rgba(201, 201, 201, 255));
+}
+
+QPushButton#btnActualizar:pressed{
+	background-color: rgb(173, 173, 173);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Actualizar</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../icons/update.svg</normaloff>../icons/update.svg</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btnAgregar">
+                 <property name="font">
+                  <font>
+                   <family>Candara</family>
+                   <pointsize>10</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="toolTip">
+                  <string>Agregar autor</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton#btnAgregar{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(184, 184, 184, 105), stop:0.81592 rgba(195, 195, 195, 94));
+	
+	
+	color: rgb(255, 255, 255);
+	border-radius: 15px;
+	padding: 10px;
+}
+
+QPushButton#btnAgregar:hover{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(150, 150, 150, 255), stop:0.81592 rgba(201, 201, 201, 255));
+}
+
+QPushButton#btnAgregar:pressed{
+	background-color: rgb(173, 173, 173);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Agregar</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../icons/addOrder.svg</normaloff>../icons/addOrder.svg</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btnModificar">
+                 <property name="font">
+                  <font>
+                   <family>Candara</family>
+                   <pointsize>10</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="toolTip">
+                  <string>Modificar datos del autor</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton#btnModificar{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(184, 184, 184, 105), stop:0.81592 rgba(195, 195, 195, 94));
+	
+	
+	color: rgb(255, 255, 255);
+	border-radius: 15px;
+	padding: 10px;
+}
+
+QPushButton#btnModificar:hover{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(150, 150, 150, 255), stop:0.81592 rgba(201, 201, 201, 255));
+}
+
+QPushButton#btnModificar:pressed{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(255, 255, 255, 142), stop:0.810945 rgba(255, 255, 255, 134));
+}
+
+QPushButton#btnModificar:disabled{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(255, 255, 255, 192), stop:0.810945 rgba(255, 255, 255, 186));
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Modificar</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../icons/edit.svg</normaloff>../icons/edit.svg</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btnEliminar">
+                 <property name="font">
+                  <font>
+                   <family>Candara</family>
+                   <pointsize>10</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
+                 <property name="toolTip">
+                  <string>Eliminar autor</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton#btnEliminar{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(184, 184, 184, 105), stop:0.81592 rgba(195, 195, 195, 94));
+	
+	
+	color: rgb(255, 255, 255);
+	border-radius: 15px;
+	padding: 10px;
+}
+
+QPushButton#btnEliminar:hover{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(150, 150, 150, 255), stop:0.81592 rgba(201, 201, 201, 255));
+}
+
+QPushButton#btnEliminar:pressed{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(255, 255, 255, 142), stop:0.810945 rgba(255, 255, 255, 134));
+}
+
+QPushButton#btnEliminar:disabled{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(255, 255, 255, 192), stop:0.810945 rgba(255, 255, 255, 186));
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Eliminar</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../icons/deleteOrder.svg</normaloff>../icons/deleteOrder.svg</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="content" native="true">
+        <property name="styleSheet">
+         <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(0, 0, 38, 255), stop:0.81592 rgba(0, 0, 74, 255));</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>15</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>15</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QTableWidget" name="tblPedidos">
+           <property name="cursor" stdset="0">
+            <cursorShape>ArrowCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: none;</string>
+           </property>
+           <property name="selectionMode">
+            <enum>QAbstractItemView::SingleSelection</enum>
+           </property>
+           <property name="selectionBehavior">
+            <enum>QAbstractItemView::SelectRows</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="footer">
+        <property name="styleSheet">
+         <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(0, 0, 38, 255), stop:0.81592 rgba(0, 0, 74, 255));</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <property name="topMargin">
+          <number>10</number>
+         </property>
+         <property name="rightMargin">
+          <number>10</number>
+         </property>
+         <property name="bottomMargin">
+          <number>10</number>
+         </property>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>793</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnSalir">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Candara</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="toolTip">
+            <string>Salir</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#btnSalir{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(184, 184, 184, 105), stop:0.81592 rgba(195, 195, 195, 94));
+	
+	color: rgba(255, 255, 255);
+	border-radius: 15px;
+	padding: 10px;
+}
+
+QPushButton#btnSalir:hover{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(150, 150, 150, 255), stop:0.81592 rgba(201, 201, 201, 255));
+}
+
+QPushButton#btnSalir:pressed{
+	background-color: rgb(173, 173, 173);
+}</string>
+           </property>
+           <property name="text">
+            <string> Salir</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../icons/logout.svg</normaloff>../icons/logout.svg</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
